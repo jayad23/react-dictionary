@@ -1,0 +1,64 @@
+{
+  "sections": [
+    {
+      "id": 1,
+      "section": {
+        "en": "Basic",
+        "es": "Básico"
+      },
+      "title": {
+        "en": "Basic concepts",
+        "es": "Conceptos básicos"
+      },
+      "description": {
+        "en": "The gap to jump from writing Vanilla code and React components can be wider and trickier if you're not familiar with these basic concepts.",
+        "es": "La grieta entre escribir código Vainilla y componentes de React puede ser más amplia y difícil de lo que debería sino conoces estos conceptos básicos."
+      }
+    },
+    {
+      "id": 2,
+      "section": {
+        "en": "UI",
+        "es": "IU"
+      },
+      "title": {
+        "en": "User Interface",
+        "es": "Interfaz de Usuario"
+      },
+      "description": {
+        "en": "React is a library that especialices in building UI. It's only fair that those who work with it have a solid judgement of components design.",
+        "es": "React es una librería que se especializa en construir IU; es apenas justo que los que trabajan con él tengan un sólido criterio en diseño de componentes."
+      }
+    },
+    {
+      "id": 3,
+      "section": {
+        "en": "UX",
+        "es": "EU"
+      },
+      "title": {
+        "en": "User Experience",
+        "es": "Experiencia de Usuario"
+      },
+      "description": {
+        "en": "React is a library that specializes in building UI. It's only fair that those who work with it have a solid judgement of components design.",
+        "es": "React es una librería que se especializa en construir IU; es apenas justo que los que trabajan con él tengan un sólido criterio en diseño de componentes."
+      }
+    },
+    {
+      "id": 3,
+      "section": {
+        "en": "Optimization",
+        "es": "Optimización"
+      },
+      "title": {
+        "en": "Optimizing Performance",
+        "es": "Rendimiento Óptimo."
+      },
+      "description": {
+        "en": "Internally, React uses several clever techniques to minimize the number of costly DOM operations required to update the UI.",
+        "es": "Internamente, React utiliza técnicas sofisticadas para minimizar el número de operación costosas en el DOM que requieran actualizar la UI."
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "test": {
+    "test": "This is a testing script to test json"
+  },
+  "todos": [
+    {
+      "name": "new",
+      "is_done": false,
+      "id": 1
+    }
+  ]
+}
