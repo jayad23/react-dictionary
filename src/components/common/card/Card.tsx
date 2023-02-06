@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { PropSection } from '../../../context/ContextTypes';
 import { SearchContext } from '../../../context/Context';
+import {useNavigate} from 'react-router-dom';
 
 const bull = (
   <Box
@@ -20,6 +21,11 @@ const bull = (
 export const TopicCard = ({ id, title, section, description }: PropSection) => {
   
   const { state } = React.useContext(SearchContext);
+  const navigate = useNavigate();
+  const handleRoute = (param: string) => {
+    const route = param.toLowerCase().replaceAll(" ", "-");
+    navigate(`/${route}`);
+  };
 
   return (
     <Card sx={{ minWidth: 275, maxWidth: 330, height: 245 }}>
@@ -50,7 +56,13 @@ export const TopicCard = ({ id, title, section, description }: PropSection) => {
           textAlign: "right", 
           padding: "0px 15px 5px 0px", 
         }}>
-        <Button variant="contained" size="small">Ver...</Button>
+        <Button 
+          variant="contained" 
+          size="small"
+          onClick={() => handleRoute(title['en'])} 
+        >
+          Ver...
+        </Button>
       </Box>
     </Card>
   );

@@ -1,6 +1,6 @@
 import React, {Suspense} from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { LoadingComponent, ErrorComponent } from '../components/common/loading-component/LoadingComponent';
+import { LoadingComponent, ErrorComponent } from '../components/common/loading-component';
 import { LayoutSearch, Elements } from "./elements";
 
 function App() {
