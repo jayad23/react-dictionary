@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -62,14 +62,24 @@ interface boxStyles {
 
 export const SearchElement = ({ boxStyles }: { boxStyles?: boxStyles}) => {
   const { state, dispatch } = useContext(SearchContext);
+  const [ searchValue, setSearchValue ] = useState("");
   const {
-    handleSearch,
-    setSearchValue,
-    searchValue,
     assets
   } = state;
 
   const styles = boxStyles || { visibility: "hidden" };
+
+  const handleSearch = (e: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const value = searchValue.length > 3 ? searchValue : null;
+    if(e.key === "Enter" && value){
+      dispatch({ type: "SEARCH", payload: searchValue })
+    };
+  };
+
+  const handleClear = () => {
+    dispatch({ type: "CLEAR" })
+    setSearchValue("");
+  };
 
   return (
     <Box sx={{...styles}}>
@@ -116,7 +126,7 @@ export const SearchElement = ({ boxStyles }: { boxStyles?: boxStyles}) => {
             {
               searchValue.length > 4 && (
                 <Tooltip title="Clear">
-                  <IconButton onClick={() => setSearchValue("")}>
+                  <IconButton onClick={handleClear}>
                     <ClearRoundedIcon sx={{ cursor: "pointer", color: "#eee"}} />
                   </IconButton>
                 </Tooltip>
@@ -127,4 +137,4 @@ export const SearchElement = ({ boxStyles }: { boxStyles?: boxStyles}) => {
       </AppBar>
     </Box>
   );
-}
+};

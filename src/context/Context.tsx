@@ -1,35 +1,28 @@
 import React, { createContext, ReactNode, useState, useReducer } from "react";
 import sections from "../base/sections.json";
-
-type SearchContextProps = {
-  state: {
-    response: Array<any>;
-    handleSearch: (e: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
-    setSearchValue: React.Dispatch<React.SetStateAction<string>>,
-    searchValue: string;
-    assets: {
-      navIcon: string;
-      nerdyIcon: string;
-      loadingIcon: string;
-    }
-  }
-  dispatch: React.Dispatch<any>;
-}
+import { SearchContextProps, PropsState, PropSection } from "./ContextTypes";
+import { assets } from "./utils"
 
 export const SearchContext = createContext({} as SearchContextProps);
 
-const assets = {
-  nerdyIcon: "https://cdna.artstation.com/p/assets/images/images/023/576/078/original/ying-chen-me-optimize.gif?1579652163",
-  navIcon: "https://www.icegif.com/wp-content/uploads/2022/04/icegif-1373.gif",
-  loadingIcon: "https://i.gifer.com/origin/a1/a1c78c7b60a5f9a6a9a77d876baae618_w200."
-};
-
-const actionReducer = (state:any, action: any) => {
+const actionReducer = (state: PropsState, action: { type: string; payload?: any }) => {
   switch(action.type){
-    case "SECTION":
+    case "SEARCH":
       return {
         ...state,
-        data: sections?.sections
+        searchValue: action.payload,
+        homeData: action.payload.length > 3 ? sections.sections.filter((el: PropSection) => el.title[state.lang].toLowerCase() === action.payload.toLowerCase()) : sections?.sections
+      }
+    case "CLEAR":
+      return {
+        ...state,
+        searchValue: "",
+        homeData: sections?.sections
+      }
+    case "LANG":
+      return {
+        ...state,
+        lang: action.payload
       }
     default: 
       return state;
@@ -39,37 +32,27 @@ const actionReducer = (state:any, action: any) => {
 
 
 const SearchContextProvider = ({ children }: { children: ReactNode }) => {
-  const [ searchValue, setSearchValue ] = useState("");
-  const [ results, setResults ] = useState([]);
-
-  const handleSearch = (e: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const value = searchValue;
-
-    if(e.key === "Enter"){
-      console.log("value in search is:", value);
-    }
-  };
 
   const initalState = {
     assets,
     searchValue: "",
-    handleSearch,
-    setSearchValue,
-    response: []
-  }
+    response: [],
+    homeData: sections?.sections,
+    lang: 'en'
+  };
 
   const [ state, dispatch ] = useReducer(actionReducer, initalState);
 
   const valueInProvider = {
     state,
     dispatch
-  }
+  };
 
   return (
     <SearchContext.Provider value={valueInProvider}>
       { children }
     </SearchContext.Provider>
-  )
+  );
 };
 
 export default SearchContextProvider;

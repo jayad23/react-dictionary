@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { TopicCard } from '../../common/card/Card';
 import { CustomBox } from '../../common/styles/customElements';
+import { SearchContext } from '../../../context/Context';
+import { PropSection } from '../../../context/ContextTypes';
 
 const Home = () => {
+  const { state } = useContext(SearchContext);
+
   return (
     <CustomBox component="section">
       {
-        [1,2,3,4,5,6,7,8,9,0].map((item) => (
-          <TopicCard key={item} />
+        state.homeData.map((item: PropSection) => (
+          <TopicCard 
+            key={item.id} 
+            {...item} 
+          />
         ))
       }
     </CustomBox>

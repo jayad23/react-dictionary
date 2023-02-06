@@ -46,14 +46,14 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "section": {
         "en": "Optimization",
         "es": "Optimización"
       },
       "title": {
-        "en": "Optimizing Performance",
-        "es": "Rendimiento Óptimo."
+        "en": "Performance",
+        "es": "Rendimiento"
       },
       "description": {
         "en": "Internally, React uses several clever techniques to minimize the number of costly DOM operations required to update the UI.",
