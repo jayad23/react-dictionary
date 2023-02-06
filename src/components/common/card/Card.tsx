@@ -5,6 +5,9 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { PropSection } from '../../../context/ContextTypes';
+import { SearchContext } from '../../../context/Context';
+import {useNavigate} from 'react-router-dom';
 
 const bull = (
   <Box
@@ -15,15 +18,23 @@ const bull = (
   </Box>
 );
 
-export const TopicCard = () => {
+export const TopicCard = ({ id, title, section, description }: PropSection) => {
+  
+  const { state } = React.useContext(SearchContext);
+  const navigate = useNavigate();
+  const handleRoute = (param: string) => {
+    const route = param.toLowerCase().replaceAll(" ", "-");
+    navigate(`/${route}`);
+  };
+
   return (
     <Card sx={{ minWidth: 275, maxWidth: 330, height: 245 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Sección
+          {section[state.lang]}
         </Typography>
         <Typography variant="h5" component="div">
-          {bull}{bull} Título {bull}{bull}
+          {bull}{bull} {title[state.lang]} {bull}{bull}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           Nivel
@@ -37,8 +48,7 @@ export const TopicCard = () => {
           }}
           >
           <Typography variant="body2">
-            Definición dividida en dos partes, esta es la primera.
-            Y esta es la segunda parte de la descripción.
+            {description[state.lang]}
           </Typography>
         </Box>
       </CardContent>
@@ -46,7 +56,13 @@ export const TopicCard = () => {
           textAlign: "right", 
           padding: "0px 15px 5px 0px", 
         }}>
-        <Button variant="contained" size="small">Ver...</Button>
+        <Button 
+          variant="contained" 
+          size="small"
+          onClick={() => handleRoute(title['en'])} 
+        >
+          Ver...
+        </Button>
       </Box>
     </Card>
   );
