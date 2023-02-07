@@ -8,12 +8,6 @@ import SearchContextProvider from './context/Context';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <StyledEngineProvider>
-      <ThemeContextProvider>
-        <SearchContextProvider>
-          <App />
-        </SearchContextProvider>
-      </ThemeContextProvider>
-    </StyledEngineProvider>
+    <App />
   </React.StrictMode>,
 )

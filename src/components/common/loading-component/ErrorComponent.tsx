@@ -1,23 +1,18 @@
 import React, { useContext, useState, useEffect } from 'react'
 import {Box, Button, CardMedia, Typography } from '@mui/material'
-import { styled } from '@mui/material/styles';
 import {SearchContext} from '../../../context/Context';
 import { useNavigate } from 'react-router-dom';
-import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
-import { useTheme } from '@mui/material';
 
 export const ErrorComponent = () => {
   const { state } = useContext(SearchContext);
   const [ opacityValue, setOpacityValue ] = useState(0);
   const [executeOpacity, setExecuteOpacity ] = useState(true);
-  const navigate = useNavigate();
-  const theme = useTheme();
+  const navigate = useNavigate()
   
   useEffect(() => {
     if(executeOpacity){
       const handlerOpacity = setInterval(() => {
         setOpacityValue(prevValue => prevValue > 0 ? prevValue - 1 : prevValue + 1);
-        console.log("dentro")
       }, 1000);
 
       return () => {

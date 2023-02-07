@@ -1,6 +1,4 @@
-import React, {Suspense} from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-
+import React from "react"
 export const LayoutSearch = React.lazy(() => import("../layout/Layout"))
 
 const DynamicImporting = (param: string) => {

@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import {Box,  CardMedia } from '@mui/material'
 import {SearchContext} from '../../../context/Context';
+import { assets } from '../../../context/utils';
 
 export const LoadingComponent = () => {
-  const { state } = useContext(SearchContext);
   return (
     <Box
       component="div"
@@ -17,7 +17,7 @@ export const LoadingComponent = () => {
       <CardMedia
         component="img"
         height={140}
-        image={state.assets.loadingIcon}
+        image={assets.loadingIcon}
         alt="Error"
       />
   </Box>

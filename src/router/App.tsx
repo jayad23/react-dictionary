@@ -1,25 +1,23 @@
 import React, {Suspense} from "react"
+import { StyledEngineProvider } from '@mui/material/styles';
+import ThemeContextProvider from '../theme/ThemeContextProvider';
+import SearchContextProvider from '../context/Context';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { LoadingComponent, ErrorComponent } from '../components/common/loading-component';
-import { LayoutSearch, Elements } from "./elements";
+import { LoadingComponent } from '../components/common/loading-component';
+import { AppRouter } from "./AppRouter";
 
 function App() {
   return (
     <Suspense fallback={<LoadingComponent />}>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<LayoutSearch />}>
-            {
-              Elements.map((props: any) => (
-                <Route key={props.id} path={props.route} element={<props.Element />}/>
-              ))
-            }
-          </Route>
-          <Route path="*" element={<ErrorComponent />}/>
-        </Routes>
-      </BrowserRouter>
+      <StyledEngineProvider>
+        <ThemeContextProvider>
+          <SearchContextProvider>
+            <AppRouter />
+          </SearchContextProvider>
+        </ThemeContextProvider>
+      </StyledEngineProvider>
     </Suspense>
   )
 }
 
-export default App
+export default App;
