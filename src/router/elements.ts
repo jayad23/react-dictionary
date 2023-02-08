@@ -1,6 +1,7 @@
 import React from "react"
 export const LayoutSearch = React.lazy(() => import("../layout/Layout"))
 
+
 const DynamicImporting = (param: string) => {
   const Component = React.lazy(() => import(`../components/pages/${param.toLowerCase()}/${param}.tsx`))
   return Component;
@@ -36,5 +37,10 @@ export const Elements = [
     id: 6,
     Element: DynamicImporting("Basic"),
     route: "/basic-concepts"
+  },
+  {
+    id: 6,
+    Element: DynamicImporting("Dynamic"),
+    route: "/basic-concepts/:selection"
   }
 ];

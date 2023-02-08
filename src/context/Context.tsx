@@ -38,7 +38,7 @@ const SearchContextProvider = ({ children }: { children: ReactNode }) => {
     searchValue: "",
     response: [],
     homeData: sections?.sections,
-    lang: 'en'
+    lang: 'es'
   };
 
   const [ state, dispatch ] = useReducer(actionReducer, initalState);
