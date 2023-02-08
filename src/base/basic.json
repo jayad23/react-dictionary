@@ -1,0 +1,67 @@
+{
+  "basic": {
+    "cycle": {
+      "title": {
+        "link": "https://cdn-media-1.freecodecamp.org/images/1*_drMYY_IEgboMS4RhvC-lQ.png",
+        "en": "Life cycle Methods.",
+        "es": "Métodos de ciclo de vida."
+      },
+      "bank": [
+        {
+          "id": 1,
+          "description": {
+            "en": "Life cycle method seen from Functional programming perspective with the useEffect hook.",
+            "es": "Métodos de ciclo de vida desde una perspectiva Funcional, con el hook useEffect."
+          },
+          "reading": [
+            {
+              "id": 1,
+              "title": "React Hooks, useEffect.",
+              "link": "https://midu.dev/react-hooks-use-effect-funcionalidad-en-el-ciclo-vida-componentes/"
+            }
+          ],
+          "media": [
+            {
+              "id": 1,
+              "title": "React 😍 💻 - #12 HOOK: useEffect | Curso de React.js",
+              "link": "https://www.youtube.com/watch?v=psQi4EIaSxM"
+            }
+          ],
+          "lang": "es"
+        },
+        {
+          "id": 2,
+          "description": {
+            "en": "This article explains what is a clean up function, and why it is important when using useEffect.",
+            "es": "Este artículo explica qué es una función clean up, y por qué es importante cuando se usa un useEffect."
+          },
+          "reading": [
+            {
+              "id": 1,
+              "title": "Understanding React’s useEffect cleanup function",
+              "link": "https://blog.logrocket.com/understanding-react-useeffect-cleanup-function/"
+            }
+          ],
+          "media": [
+            {
+              "id": 1,
+              "title": "Full React Tutorial #24 - useEffect Cleanup",
+              "link": "https://www.youtube.com/watch?v=aKOQtGLT-Yk"
+            },
+            {
+              "id": 2,
+              "title": "React Hooks Tutorial - 10 - useEffect with cleanup",
+              "link": "https://www.youtube.com/watch?v=DTlmk6QeOHY"
+            },
+            {
+              "id": 3,
+              "title": "Tutorial - useEffect cleanup.",
+              "link": "https://www.youtube.com/watch?v=KzH6YxW0zW4"
+            }
+          ],
+          "lang": "en"
+        }
+      ]
+    }
+  }
+}
