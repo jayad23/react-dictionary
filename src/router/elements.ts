@@ -42,5 +42,10 @@ export const Elements = [
     id: 6,
     Element: DynamicImporting("Dynamic"),
     route: "/basic-concepts/:selection"
+  },
+  {
+    id: 6,
+    Element: DynamicImporting("Dynamic"),
+    route: "/user-interface/:selection"
   }
 ];
