@@ -10,10 +10,10 @@ import {
   CardMedia,
   Tooltip
 } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearRoundedIcon from '@mui/icons-material/ClearRounded';
 import { SearchContext } from '../context/Context';
+import { LanguageMenu } from './LanguageMenu';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -44,7 +44,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
     width: '100%',
@@ -82,19 +81,16 @@ export const SearchElement = ({ boxStyles }: { boxStyles?: boxStyles}) => {
     setSearchValue("");
   };
 
+  const navbarTitle = {
+    en: "The React Developer Dictionary.",
+    es: "Diccionario para el Desarrollador React."
+  };
+
   return (
     <Box sx={{...styles}}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+          <LanguageMenu />
           <CardMedia
             component="img"
             sx={{
@@ -111,7 +107,7 @@ export const SearchElement = ({ boxStyles }: { boxStyles?: boxStyles}) => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Diccionario para el React Developer.
+            {navbarTitle[state.lang]}
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -120,7 +116,6 @@ export const SearchElement = ({ boxStyles }: { boxStyles?: boxStyles}) => {
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
-              //onKeyUp={(e) => handleSearch(e)}
               onChange={(e) => handleSearch(e.target.value)}
               value={searchValue}
             />

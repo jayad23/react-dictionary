@@ -10,7 +10,6 @@ export const SearchContext = createContext({} as SearchContextProps);
 const actionReducer = (state: PropsState, action: { type: string; payload?: any }) => {
   switch(action.type){
     case "SEARCH":
-      console.log(action.payload)
       return {
         ...state,
         searchValue: action.payload,

@@ -26,8 +26,15 @@ export const NoDataComponent = () => {
         component="img"
         height="194"
         sx={{ objectFit: "contain"}}
+        image={state.assets.noDataAlertIcon}
+        alt="alert_icon"
+      />
+      <CardMedia
+        component="img"
+        height="194"
+        sx={{ objectFit: "contain"}}
         image={state.assets.noDataIcon}
-        alt="Paella dish"
+        alt="no_data_icon"
       />
       <Typography variant='h1'>{typoText[state.lang]}</Typography>
     </Box>
