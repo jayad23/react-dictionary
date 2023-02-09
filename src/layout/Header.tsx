@@ -72,12 +72,10 @@ export const SearchElement = ({ boxStyles }: { boxStyles?: boxStyles}) => {
 
   const styles = boxStyles || { visibility: "hidden" };
 
-  const handleSearch = (e: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const value = searchValue.length > 3 ? searchValue : null;
-    if(e.key === "Enter" && value){
-      dispatch({ type: "SEARCH", payload: searchValue })
-    };
-  };
+  const handleSearch = (value: string) => {
+    setSearchValue(value);
+    dispatch({ type: "SEARCH", payload: value })
+  }
 
   const handleClear = () => {
     dispatch({ type: "CLEAR" })
@@ -122,8 +120,8 @@ export const SearchElement = ({ boxStyles }: { boxStyles?: boxStyles}) => {
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
-              onKeyUp={(e) => handleSearch(e)}
-              onChange={(e) => setSearchValue(e.target.value)}
+              //onKeyUp={(e) => handleSearch(e)}
+              onChange={(e) => handleSearch(e.target.value)}
               value={searchValue}
             />
             {

@@ -29,13 +29,18 @@ export const TopicCard = ({ id, title, section, description }: PropSection) => {
     navigate(`/${route}`);
   };
 
+  const buttonText = {
+    en: "See...",
+    es: "Ver..."
+  }
+
   return (
     <Card sx={{ minWidth: 275, maxWidth: 330, height: 245 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {section[state.lang]}
         </Typography>
-        <Typography variant="h5" component="div">
+        <Typography variant="h5" noWrap component="div">
           {bull}{bull} {title[state.lang]} {bull}{bull}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
@@ -63,7 +68,7 @@ export const TopicCard = ({ id, title, section, description }: PropSection) => {
           size="small"
           onClick={() => handleRoute(title['en'])} 
         >
-          Ver...
+          {buttonText[state.lang]}
         </Button>
       </Box>
     </Card>

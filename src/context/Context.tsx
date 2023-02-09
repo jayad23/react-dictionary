@@ -2,16 +2,19 @@ import React, { createContext, ReactNode, useState, useReducer } from "react";
 import sections from "../base/sections.json";
 import { SearchContextProps, PropsState, PropSection } from "./ContextTypes";
 import { assets } from "./utils"
+import { stringManager } from "../utilities/stringManager";
+
 
 export const SearchContext = createContext({} as SearchContextProps);
 
 const actionReducer = (state: PropsState, action: { type: string; payload?: any }) => {
   switch(action.type){
     case "SEARCH":
+      console.log(action.payload)
       return {
         ...state,
         searchValue: action.payload,
-        homeData: action.payload.length > 3 ? sections.sections.filter((el: PropSection) => el.title[state.lang].toLowerCase() === action.payload.toLowerCase()) : sections?.sections
+        homeData: sections.sections.filter((el: PropSection) => stringManager(el.title[state.lang]).includes(stringManager(action.payload)))
       }
     case "CLEAR":
       return {
