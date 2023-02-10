@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+.information-card{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border: 1px solid;
+  transition:.6s;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.information-filter{
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.702);
+  z-index: 10;
+  transition:.6s;
+  opacity: 0;
+}
+.information-card img{
+  position: absolute;
+  top: 0;left: 0;
+  max-width: 100%;
+  transition:.6s;
+}
+
+.information-top,.information-bottom{
+  position: absolute;
+  left: 50%;
+  background: #fff;
+  height: 1px;
+  width: 0;
+  z-index: 10;
+  transition: .6s;
+}
+.information-top{
+  top:10%;
+}
+
+.information-bottom{
+  bottom: 10%;
+}
+
+.information-left,.information-right{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 10;
+  width: 1px;
+  height: 0;
+  background: #fff;
+  transition: .6s;
+}
+.information-right{
+  left: 90%;
+}
+.information-desc{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: rgba(0, 0, 0, 0.517);
+  width: 80%;
+  height: 80%;
+  z-index: 10;
+  transition: .6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.information-desc p{
+  font-size: 1.25em;
+  color: white;
+  font-family: 'Anton', bold;
+}
+
+.information-card:hover img{
+  transform: scale(1.2);
+}
+.information-card:hover .information-filter{
+  opacity: .15;
+}
+
+.information-card:hover .information-top{
+  left: 10%;
+  width: 80%;
+}
+.information-card:hover .information-bottom{
+  left: 10%;
+  width: 80%;
+}
+
+.information-card:hover .information-left{
+  top: 10%;
+  height: 80%;
+}
+
+.information-card:hover .information-right{
+  top: 10%;
+  height: 80%;
+}
+
+.information-card:hover .information-desc{
+  opacity: 1;
+}

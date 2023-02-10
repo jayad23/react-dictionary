@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const Xperience = () => {
   return (
-    <div>Xperience</div>
+    <h1>hola</h1>
   )
 }
 

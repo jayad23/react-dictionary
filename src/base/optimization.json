@@ -2,7 +2,7 @@
   "optmization": {
     "render": {
       "title": {
-        "link": "https://www.kirupa.com/react/images/comp_tree_v2a_200.png",
+        "link": "https://blog.loginradius.com/static/a22b36cdcd9eba841d06147e84b867f9/03979/index.png",
         "en": "Over-rendering",
         "es": "Sobre-renderizado"
       },
@@ -77,7 +77,7 @@
     },
     "typescript": {
       "title": {
-        "link": "https://react-cheatsheets.osrc.com/img/icon.png",
+        "link": "https://images.ctfassets.net/23aumh6u8s0i/3auCWvEHRgMULidrkY6oQx/44b6f250f482dc75323130492e322746/TS.png",
         "en": "Learn to use TS with React.",
         "es": "Aprende a usar TS con React."
       },

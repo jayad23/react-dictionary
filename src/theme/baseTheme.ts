@@ -28,4 +28,13 @@ export const baseTheme = createTheme({
       fontSize: 36,
     }
   },
+  breakpoints: {
+    values: {
+      xs: 300,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
 })

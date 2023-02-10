@@ -1,5 +1,5 @@
 import React from 'react';
-import { CustomBox } from '../../common/styles/customElements';
+import { CustomBoxElement } from '../../common/styles/customElements';
 import { SectionCard } from '../../common/section-card/SectionCard';
 import performanceData from "../../../base/optimization.json";
 
@@ -8,7 +8,7 @@ const Performance = () => {
   const options = Object.keys(performance);
 
   return (
-    <CustomBox>
+    <CustomBoxElement>
       {
         options.length > 0 && 
         options.map((option: string, index: number ) => (
@@ -19,7 +19,7 @@ const Performance = () => {
           />  
         ))
       }
-    </CustomBox>
+    </CustomBoxElement>
   )
 }
 
