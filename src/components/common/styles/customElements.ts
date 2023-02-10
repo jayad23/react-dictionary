@@ -24,6 +24,6 @@ export const CustomBoxElement = styled(Box)(({ theme }) => ({
 export const CenteredContainer = styled(Box)`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: start;
   gap: 3px;
 `;

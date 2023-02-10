@@ -26,7 +26,7 @@ export const CustomRow = ({ from, row }: { from: string; row: Array<Media> }) =>
             key={id}
             component="div"
             sx={{
-              width: "100%",
+              width: "fit-content",
               borderRadius: "5px",
               padding: "2px 5px 0px 5px",
               background: color[200]
@@ -34,7 +34,7 @@ export const CustomRow = ({ from, row }: { from: string; row: Array<Media> }) =>
           >
             <Typography 
               sx={{ 
-                fontSize: 14, 
+                fontSize: 12.5, 
                 cursor: "pointer", 
                 color: "bolder" 
               }} 
