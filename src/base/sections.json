@@ -59,6 +59,21 @@
         "en": "Internally, React uses several clever techniques to minimize the number of costly DOM operations required to update the UI.",
         "es": "Internamente, React utiliza técnicas sofisticadas para minimizar el número de operación costosas en el DOM que requieran actualizar la UI."
       }
+    },
+    {
+      "id": 5,
+      "section": {
+        "en": "Learning",
+        "es": "Aprendizaje"
+      },
+      "title": {
+        "en": "Free Courses",
+        "es": "Cursos Gratis"
+      },
+      "description": {
+        "en": "Find full free courses online to kick off or deep into any aspect of React development.",
+        "es": "Encuentra cursos online gratuitos para empezar o profundizar en cualquier aspecto del desarrollo de React."
+      }
     }
   ]
 }

@@ -21,7 +21,6 @@ const bull = (
 );
 
 export const TopicCard = ({ id, title, section, description }: PropSection) => {
-  
   const { state } = React.useContext(SearchContext);
   const navigate = useNavigate();
   const handleRoute = (param: string) => {
