@@ -39,13 +39,18 @@ export const Elements = [
     route: "/basic-concepts"
   },
   {
-    id: 6,
+    id: 7,
     Element: DynamicImporting("Dynamic"),
     route: "/basic-concepts/:selection"
   },
   {
-    id: 6,
+    id: 8,
     Element: DynamicImporting("Dynamic"),
     route: "/user-interface/:selection"
+  },
+  {
+    id: 9,
+    Element: DynamicImporting("Dynamic"),
+    route: "/performance/:selection"
   }
 ];
