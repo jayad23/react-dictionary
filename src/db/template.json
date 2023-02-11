@@ -1,0 +1,31 @@
+{
+  "title": {
+    "link": "",
+    "en": "",
+    "es": ""
+  },
+  "bank": [
+    {
+      "id": 1,
+      "description": {
+        "en": "",
+        "es": ""
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "NaN",
+          "link": "#"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "NaN",
+          "link": "#"
+        }
+      ],
+      "lang": "en"
+    }
+  ]
+}
