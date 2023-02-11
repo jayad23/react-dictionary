@@ -1,0 +1,31 @@
+{
+  "title": {
+    "link": "https://www.webskittersacademy.in/wp-content/uploads/2015/08/Web-Developer-skill.jpg",
+    "en": "Web Development",
+    "es": "Desarrollo Web"
+  },
+  "bank": [
+    {
+      "id": 1,
+      "description": {
+        "en": "Dive deep into modern web dev.",
+        "es": "Navega a profundidad en desarrollo web moderno."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "Modern Web Development.",
+          "link": "https://fullstackopen.com/en/"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "NaN",
+          "link": "#"
+        }
+      ],
+      "lang": "en"
+    }
+  ]
+}

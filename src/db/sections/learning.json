@@ -1,0 +1,15 @@
+{
+  "id": 5,
+  "section": {
+    "en": "Learning",
+    "es": "Aprendizaje"
+  },
+  "title": {
+    "en": "Free Courses",
+    "es": "Cursos Gratis"
+  },
+  "description": {
+    "en": "Find full free courses online to kick off or deep into any aspect of React development.",
+    "es": "Encuentra cursos online gratuitos para empezar o profundizar en cualquier aspecto del desarrollo de React."
+  }
+}

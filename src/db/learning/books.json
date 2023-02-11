@@ -1,0 +1,117 @@
+{
+  "title": {
+    "link": "https://kinsta.com/wp-content/uploads/2021/03/javascript-libraries-1200x675.png",
+    "en": "Dev Books.",
+    "es": "Libros Dev."
+  },
+  "bank": [
+    {
+      "id": 1,
+      "description": {
+        "en": "The Road to React",
+        "es": "The Road to React"
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "Book",
+          "link": "https://sd.blackball.lv/library/the_road_to_react_(2020).pdf"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "Audio-book",
+          "link": "https://www.youtube.com/playlist?list=PLWxkYvHUbRdmbTyGoeOgmjGRt9t5Ma0N9"
+        }
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 2,
+      "description": {
+        "en": "Eloquent Javascript with Codesandbox",
+        "es": "Eloquent Javascript con Codesandbox."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "Web Book",
+          "link": "https://eloquentjavascript.net/"
+        },
+        {
+          "id": 2,
+          "title": "Book .pdf",
+          "link": "https://eloquentjavascript.net/Eloquent_JavaScript_small.pdf"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "Audio-book",
+          "link": "https://www.youtube.com/playlist?list=PL-uROEx3vAxi4NyQ_8Euc1oPBfG2VJRvQ"
+        }
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 3,
+      "description": {
+        "en": "Eloquent Javascript",
+        "es": "Eloquent Javascript"
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "Libro .pdf",
+          "link": "https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "Cap. 1",
+          "link": "https://www.youtube.com/watch?v=nTu2Q-xjVG4"
+        },
+        {
+          "id": 2,
+          "title": "Cap. 2",
+          "link": "https://www.youtube.com/watch?v=ynPL5_onJhU"
+        },
+        {
+          "id": 3,
+          "title": "Cap. 3",
+          "link": "https://www.youtube.com/watch?v=6u4_GNpQzFY"
+        }
+      ],
+      "lang": "es"
+    },
+    {
+      "id": 4,
+      "description": {
+        "en": "Craking the Coding interview.",
+        "es": "Craking the Coding interview."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "Libro .pdf",
+          "link": "http://englishonlineclub.com/pdf/Cracking%20the%20Coding%20Interview%20-%20189%20Programming%20Questions%20and%20Solutions%20(6th%20Edition)%20[EnglishOnlineClub.com].pdf"
+        },
+        {
+          "id": 2,
+          "title": "FAQ's & Soluciones.",
+          "link": "https://github.com/club-de-programacion-competitiva/libros/blob/master/Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-and-Solutions.pdf"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "Use it Effectively",
+          "link": "https://www.youtube.com/watch?v=yG0RhKFTonw"
+        }
+      ],
+      "lang": "en"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": {
+    "link": "https://enappd.com/media/1_TviZox_MWEicxKX0hKjlKA.png",
+    "en": "Fetching data in React.",
+    "es": "Traer datos en React."
+  },
+  "bank": [
+    {
+      "id": 1,
+      "description": {
+        "en": "Suspense to handle fetch and promise status.",
+        "es": "Suspense para traer datos y estados de promesas."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "Fetch data like a pro.",
+          "link": "https://blog.bitsrc.io/how-to-fetch-api-data-in-react-like-a-pro-fd7379dc3e6f"
+        },
+        {
+          "id": 2,
+          "title": "CodeSanbox Example.",
+          "link": "https://codesandbox.io/s/react18-suspense-zserll?from-embed=&file=/src/utils/getSuspender.j"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "React Suspense.",
+          "link": "https://www.youtube.com/watch?v=NTDJ-NQ32_E"
+        }
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 2,
+      "description": {
+        "en": "Data Management with React Query.",
+        "es": "Manejo de datos con React Query."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "R. Query como arquitectura.",
+          "link": "https://www.paradigmadigital.com/dev/react-query-como-arquitectura/"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "React-Query Tutorial P1.",
+          "link": "https://www.youtube.com/watch?v=lNkAJCoXg6I"
+        },
+        {
+          "id": 2,
+          "title": "React-Query Tutorial P2.",
+          "link": "https://www.youtube.com/watch?v=X1qo8qEaWLg"
+        }
+      ],
+      "lang": "es"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
-import React, { createContext, ReactNode, useState, useReducer } from "react";
-import sections from "../base/sections.json";
+import React, { createContext, ReactNode, useReducer } from "react";
+import { sections } from "../db/sections/index"; 
 import { SearchContextProps, PropsState, PropSection } from "./ContextTypes";
 import { assets } from "./utils"
 import { stringManager } from "../utilities/stringManager";
@@ -13,13 +13,13 @@ const actionReducer = (state: PropsState, action: { type: string; payload?: any 
       return {
         ...state,
         searchValue: action.payload,
-        homeData: sections.sections.filter((el: PropSection) => stringManager(el.title[state.lang]).includes(stringManager(action.payload)))
+        homeData: sections.filter((el: PropSection) => stringManager(el.title[state.lang]).includes(stringManager(action.payload)))
       }
     case "CLEAR":
       return {
         ...state,
         searchValue: "",
-        homeData: sections?.sections
+        homeData: sections
       }
     case "LANG":
       return {
@@ -39,7 +39,7 @@ const SearchContextProvider = ({ children }: { children: ReactNode }) => {
     assets,
     searchValue: "",
     response: [],
-    homeData: sections?.sections,
+    homeData: sections,
     lang: 'es'
   };
 

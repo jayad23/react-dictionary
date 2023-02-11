@@ -1,0 +1,13 @@
+import basic from "./basic.json";
+import learning from "./learning.json";
+import ui from "./ui.json";
+import ux from "./ux.json";
+import performance from "./performance.json";
+
+export const sections = [
+  basic,
+  ui,
+  ux,
+  performance,
+  learning,
+]
