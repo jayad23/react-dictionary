@@ -1,0 +1,31 @@
+{
+  "title": {
+    "link": "https://strapi-antstack-v3.s3.amazonaws.com/react_formik_yup_6a7ecd8dda.png",
+    "en": "Formik & Yup",
+    "es": "Formik & Yup"
+  },
+  "bank": [
+    {
+      "id": 1,
+      "description": {
+        "en": "Fomik & Yup are the number one tool for form management in professional environment.",
+        "es": "Formik & Yup son la herramienta Nº 1 para manejo de formularios en ambientes profesionales."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "Formularios con Formik y Yup",
+          "link": "https://www.linkedin.com/pulse/manejo-y-validaci%25C3%25B3n-de-formularios-con-formik-yup-vanegas-p-/?trackingId=AHcxGBL5Szqm17U3P9C8UA%3D%3D"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "Formularios con FORMIK y YUP",
+          "link": "https://youtu.be/eppFExMEUUA"
+        }
+      ],
+      "lang": "es"
+    }
+  ]
+}

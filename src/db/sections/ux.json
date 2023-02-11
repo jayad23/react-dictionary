@@ -1,0 +1,15 @@
+{
+  "id": 3,
+  "section": {
+    "en": "UX",
+    "es": "EU"
+  },
+  "title": {
+    "en": "User Experience",
+    "es": "Experiencia de Usuario"
+  },
+  "description": {
+    "en": "React is a library that specializes in building UI. It's only fair that those who work with it have a solid judgement of components design.",
+    "es": "React es una librería que se especializa en construir IU; es apenas justo que los que trabajan con él tengan un sólido criterio en diseño de componentes."
+  }
+}

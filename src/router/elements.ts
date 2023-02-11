@@ -52,5 +52,20 @@ export const Elements = [
     id: 9,
     Element: DynamicImporting("Dynamic"),
     route: "/performance/:selection"
+  },
+  {
+    id: 10,
+    Element: DynamicImporting("Dynamic"),
+    route: "/user-experience/:selection"
+  },
+  {
+    id: 11,
+    Element: DynamicImporting("Learning"),
+    route: "/free-courses"
+  },
+  {
+    id: 12,
+    Element: DynamicImporting("Dynamic"),
+    route: "/free-courses/:selection"
   }
 ];

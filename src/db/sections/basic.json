@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "section": {
+    "en": "Basic",
+    "es": "Básico"
+  },
+  "title": {
+    "en": "Basic concepts",
+    "es": "Conceptos básicos"
+  },
+  "description": {
+    "en": "The gap to jump from writing Vanilla code and React components can be wider and trickier if you're not familiar with these basic concepts.",
+    "es": "La grieta entre escribir código Vainilla y componentes de React puede ser más amplia y difícil de lo que debería sino conoces estos conceptos básicos."
+  }
+}

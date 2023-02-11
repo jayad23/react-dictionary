@@ -23,9 +23,12 @@
 }
 .information-card img{
   position: absolute;
-  top: 0;left: 0;
-  max-width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
   transition:.6s;
+  height: 100%;
 }
 
 .information-top,.information-bottom{

@@ -1,0 +1,100 @@
+{
+  "title": {
+    "link": "https://images.ctfassets.net/23aumh6u8s0i/3auCWvEHRgMULidrkY6oQx/44b6f250f482dc75323130492e322746/TS.png",
+    "en": "TS with React.",
+    "es": "TS con React."
+  },
+  "bank": [
+    {
+      "id": 1,
+      "description": {
+        "en": "Cheatsheet for commonly used types in React.",
+        "es": "Typos comunes en componentes."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "React, TypeScript Cheatsheet.",
+          "link": "https://blog.bitsrc.io/react-with-typescript-cheatsheet-9dd891dc5bfe#45d2"
+        },
+        {
+          "id": 2,
+          "title": "Set Up Types on Hooks",
+          "link": "https://www.freecodecamp.org/news/react-typescript-how-to-set-up-types-on-hooks/#set-types-on-usestate"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "NaN",
+          "link": "#"
+        }
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 2,
+      "description": {
+        "en": "Video tutorials on TS & React.",
+        "es": "Tutoriales de TS & React."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "NaN",
+          "link": "#"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "Tutorial desde CERO en ES.",
+          "link": "https://www.youtube.com/watch?v=xtp_DuPxo9Q&t=992s"
+        },
+        {
+          "id": 2,
+          "title": "React + TypeScript: Context en ES.",
+          "link": "https://www.youtube.com/watch?v=8HE657KssxE&t=1514s"
+        },
+        {
+          "id": 3,
+          "title": "Typescript Mistakes (EN)",
+          "link": "https://www.youtube.com/watch?v=ZCllX1p763U"
+        }
+      ],
+      "lang": "es"
+    },
+    {
+      "id": 3,
+      "description": {
+        "en": "Advanced concepts of Ts in React.",
+        "es": "Conceptos avanzados de Ts en React."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "Advanced TS for React P1.",
+          "link": "https://www.developerway.com/posts/advanced-typescript-for-react-developers"
+        },
+        {
+          "id": 2,
+          "title": "Advanced TS for React P2.",
+          "link": "https://www.developerway.com/posts/advanced-typescript-for-react-developers-discriminated-unions"
+        },
+        {
+          "id": 3,
+          "title": "Advanced TS for React P3.",
+          "link": "https://www.developerway.com/posts/advanced-typescript-for-react-developers-part-3"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "NaN",
+          "link": "#"
+        }
+      ],
+      "lang": "en"
+    }
+  ]
+}

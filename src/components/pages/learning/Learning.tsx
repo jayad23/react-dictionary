@@ -1,10 +1,10 @@
 import React from 'react';
 import { CustomBoxElement } from '../../common/styles/customElements';
 import { SectionCard } from '../../common/section-card/SectionCard';
-import { performance } from '../../../db/performance/index';
+import { learning } from '../../../db/learning/index';
 
-const Performance = () => {
-  const options = Object.keys(performance);
+const Learning = () => {
+  const options = Object.keys(learning);
   
   return (
     <CustomBoxElement>
@@ -14,7 +14,7 @@ const Performance = () => {
           <SectionCard 
             key={index} 
             option={option} 
-            information={performance[option as keyof typeof performance]} 
+            information={learning[option as keyof typeof learning]} 
           />  
         ))
       }
@@ -22,4 +22,4 @@ const Performance = () => {
   )
 }
 
-export default Performance;
+export default Learning;

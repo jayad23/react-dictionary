@@ -1,0 +1,53 @@
+{
+  "title": {
+    "link": "https://www.pngitem.com/pimgs/m/157-1575410_react-js-logo-png-transparent-png.png",
+    "en": "Learn React.",
+    "es": "Aprende React."
+  },
+  "bank": [
+    {
+      "id": 1,
+      "description": {
+        "en": "Learn Class Componentes.",
+        "es": "Aprende Componentes de Clase."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "A one-hour long - interactive Course.",
+          "link": "https://scrimba.com/learn/classcomponents"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "Intro to Class Components | Class Components in React tutorial.",
+          "link": "https://www.youtube.com/playlist?list=PLqYFXd9GTRVUE1mKTvVAPqtVzLbRTnm_L"
+        }
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 2,
+      "description": {
+        "en": "React for Beginners.",
+        "es": "React para principantes."
+      },
+      "reading": [
+        {
+          "id": 1,
+          "title": "NaN",
+          "link": "#"
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "title": "Desde Cero para principiantes - 2023",
+          "link": "https://www.youtube.com/watch?v=rLoWMU4L_qE"
+        }
+      ],
+      "lang": "es"
+    }
+  ]
+}
