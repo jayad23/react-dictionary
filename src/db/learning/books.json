@@ -112,28 +112,6 @@
         }
       ],
       "lang": "en"
-    },
-    {
-      "id": 5,
-      "description": {
-        "en": "Craking the Coding interview",
-        "es": "Craking the Coding interview."
-      },
-      "reading": [
-        {
-          "id": 1,
-          "title": "Libro .pdf",
-          "link": "http://englishonlineclub.com/pdf/Cracking%20the%20Coding%20Interview%20-%20189%20Programming%20Questions%20and%20Solutions%20(6th%20Edition)%20[EnglishOnlineClub.com].pdf"
-        }
-      ],
-      "media": [
-        {
-          "id": 1,
-          "title": "NaN",
-          "link": "#"
-        }
-      ],
-      "lang": "es"
     }
   ]
 }
