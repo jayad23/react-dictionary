@@ -3,6 +3,7 @@ import learning from "./learning.json";
 import ui from "./ui.json";
 import ux from "./ux.json";
 import performance from "./performance.json";
+import blogs from "./blogs.json";
 
 export const sections = [
   basic,
@@ -10,4 +11,5 @@ export const sections = [
   ux,
   performance,
   learning,
-]
+  blogs
+];
