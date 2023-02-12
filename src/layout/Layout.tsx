@@ -6,7 +6,8 @@ const boxStyles = {
   flexGrow: 1, 
   position: "fixed", 
   width: "100%",
-  top: 0
+  top: 0,
+  zIndex: 11
 }
 
 const LayoutSearch = () => (
