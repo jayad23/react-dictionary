@@ -28,7 +28,6 @@ const actionReducer = (state: PropsState, action: { type: string; payload?: any 
       }
     default: 
       return state;
-
   }
 }
 
