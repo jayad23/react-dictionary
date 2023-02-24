@@ -1,17 +1,36 @@
 // Import the functions you need from the SDKs you need
+import { v4 } from "uuid";
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore"
+import { getFirestore } from "firebase/firestore";
+import { getStorage, ref, uploadBytes } from "firebase/storage";
+import { getEnvVariables } from "./src/utilities/getEnv";
+
+const {
+  apiKey,
+  authDomain,
+  projectId,
+  storageBucket,
+  messagingSenderId,
+  appId
+} = getEnvVariables();
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAI,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID
+  apiKey,
+  authDomain,
+  projectId,
+  storageBucket,
+  messagingSenderId,
+  appId
 };
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app)
+const storage = getStorage(app);
+
+export const uploadPicture = async (file: Blob) => {
+  const imageRef = ref(storage, v4());
+  const result = await uploadBytes(imageRef, file)
+  return result;
+}
 
 export default app;
