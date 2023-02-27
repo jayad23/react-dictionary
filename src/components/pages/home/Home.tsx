@@ -42,7 +42,7 @@ const Home = () => {
       setDoc(doc(itemCollection, documentTitle), i)
     }
 	};
-	console.log(col)
+
 	useEffect(() => {
 	  getDocs(itemCollection).then((res) => {
 	    const items = res.docs.map(item => ({...item.data(), uid: item.id }));
