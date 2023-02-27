@@ -2,7 +2,7 @@ import React from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 import { Box, CardMedia } from '@mui/material';
 
-const Renderer = ({ url, loading }: { url: string | null; loading: boolean }) => {
+const ImageRender = ({ url, loading }: { url: string | null; loading: boolean }) => {
 	if (loading && url === null) {
 		return (
 			<Box
@@ -32,4 +32,4 @@ const Renderer = ({ url, loading }: { url: string | null; loading: boolean }) =>
 	);
 };
 
-export default Renderer;
+export default ImageRender;

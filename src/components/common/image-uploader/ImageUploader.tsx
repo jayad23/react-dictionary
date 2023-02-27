@@ -4,7 +4,9 @@ import { uploadPicture } from '../../../../firebaseConfig';
 import { getEnvVariables } from '../../../utilities/getEnv';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import CloudUploadRoundedIcon from '@mui/icons-material/CloudUploadRounded';
-import Renderer from './Renderer';
+import ImageRender from './components/ImageRender';
+import { DashedBox } from './style/ImageUploadStyles';
+import {ComposedBox} from './components/ComposedBox';
 
 const ImageUploader = () => {
 	const [imageUrl, setyImageUrl] = useState<null | string>(null);
@@ -17,18 +19,16 @@ const ImageUploader = () => {
 		if (filelist) {
 			try {
 				const result = await uploadPicture(filelist[0] as Blob);
-				console.log(result);
 				setyImageUrl(`${storageBaseUrl}${result?.metadata.name}?alt=media&token=`);
 				setLoading(false);
 			} catch (err) {
-				console.error(err);
 				setyImageUrl('');
 				setLoading(false);
 			}
 		}
 	};
 
-	const handleRef = () => {
+	const handleInputChange = () => {
 		if (inputRef && inputRef.current) {
 			inputRef.current.click();
 		}
@@ -39,39 +39,36 @@ const ImageUploader = () => {
 	}
 
 	return (
-		<Box
-			sx={{
-				border: '1px dashed #B2B2B2',
-				display: 'flex',
-				justifyContent: 'space-between',
-				alignItems: 'center',
-			}}
-		>
+		<DashedBox>
 			<input
 				style={{ display: 'none' }}
+				name="upload picture"
 				type="file"
 				accept='image/*'
 				ref={inputRef}
-				placeholder="testing upload"
+				placeholder="hidden_input"
 				onChange={(e) => handleSubmit(e.target.files)}
 			/>
-			<Box sx={{ width: "50%" }}>
-				<IconButton color="primary" onClick={handleRef}>
+			<ComposedBox>
+				<IconButton name="CloudIconWrapper" color="primary" onClick={handleInputChange}>
 					<CloudUploadRoundedIcon />
 				</IconButton>
-				<IconButton 
+				<IconButton
+					name="CloseIconWrapper" 
 					color="secondary" 
 					disabled={!imageUrl}
 					onClick={unselectImage}
 				>
 					<CloseRoundedIcon />
 				</IconButton>
-			</Box>
-			<Box sx={{ width: "50%" }}
-			>
-				<Renderer loading={loading} url={imageUrl} />
-			</Box>
-		</Box>
+			</ComposedBox>
+			<ComposedBox>
+				<ImageRender 
+					loading={loading} 
+					url={imageUrl} 
+				/>
+			</ComposedBox>
+		</DashedBox>
 	);
 };
 

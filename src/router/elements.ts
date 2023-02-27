@@ -67,5 +67,10 @@ export const Elements = [
     id: 12,
     Element: DynamicImporting("Dynamic"),
     route: "/free-courses/:selection"
+  },
+  {
+    id: 13,
+    Element: DynamicImporting("ArticlesBlogs"),
+    route: "/blogs-&-articles"
   }
 ];
