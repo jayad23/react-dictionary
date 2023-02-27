@@ -121,7 +121,7 @@ export const SearchElement = ({ boxStyles }: { boxStyles?: boxStyles}) => {
             />
             {
               searchValue.length > 4 && (
-                <Tooltip title="Clear">
+                <Tooltip title="Clear" sx={{ position: "absolute", right: 0}}>
                   <IconButton onClick={handleClear}>
                     <ClearRoundedIcon sx={{ cursor: "pointer", color: "#eee"}} />
                   </IconButton>

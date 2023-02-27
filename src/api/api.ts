@@ -1,25 +1,43 @@
-import { getDocs, collection, getDoc, doc, addDoc, serverTimestamp, setDoc } from 'firebase/firestore';
+import { getDocs, collection, getDoc, doc, addDoc, serverTimestamp, setDoc, QuerySnapshot, DocumentData } from 'firebase/firestore';
 import {db} from '../../firebaseConfig';
 
-type SectionProps = {
-  id: number;
-  title: {
-    [key: string]: string
-  };
-  section: {
-    [key: string]: string
-  };
-  description: {
-    [key: string]: string
-  };
-  uid: string;
+const fetchData = (endpoint: string) => {
+  const itemCollection = collection(db, endpoint);
+  return getDocs(itemCollection);
 }
 
-const fetchData = (endpoint: string) => {
-  let data: Array<SectionProps | any> = [];
-  const itemCollection = collection(db, endpoint);
-  getDocs(itemCollection).then((res) => {
-    data = res.docs.map((item) => ({...item.data(), uid: item.id }))
-  })
-  return data;
-}
+const wrapPromise = (promise: Promise<QuerySnapshot<DocumentData>>) => {
+  let status = 'Pending';
+  let result: any;
+  let error: any;
+  let suspender = promise.then(
+    (res) => {
+      (status = 'Success'), (result = res.docs.map((item) => ({...item.data(), uid: item.id })));
+    },
+    (err) => {
+      (status = 'Failed'), (error = err);
+    }
+  );
+
+  return {
+    read(){
+      if(status === "Pending"){
+        throw suspender;
+      } else if (status === "Failed"){
+        throw error;
+      } else {
+        return result;
+      }
+    }
+  };
+};
+
+export const getData = (endpoint: string) => {
+  const key = endpoint.split("/")[1];
+  const newPromise = fetchData(endpoint);
+  
+  return {
+    [key]: wrapPromise(newPromise)
+  };
+
+};

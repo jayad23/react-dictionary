@@ -2,7 +2,6 @@ import React, {Suspense} from "react"
 import { StyledEngineProvider } from '@mui/material/styles';
 import ThemeContextProvider from '../theme/ThemeContextProvider';
 import SearchContextProvider from '../context/Context';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { LoadingComponent } from '../components/common/loading-component';
 import { AppRouter } from "./AppRouter";
 
