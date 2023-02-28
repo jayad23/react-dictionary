@@ -14,5 +14,5 @@ export const uploadPicture = async (file: Blob) => {
 
 export const getCollection = (endpoint: string): CollectionReference<DocumentData> => collection(db, endpoint);
 
-const Col = getCollection("ux");
+const Col = getCollection("");
 export const addDocument = (documentTitle: string, newCollection: DocumentData) => setDoc(doc(Col, documentTitle), newCollection);
