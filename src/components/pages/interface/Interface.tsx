@@ -1,9 +1,13 @@
 import React from 'react';
 import { CustomBoxElement } from '../../common/styles/customElements';
 import { SectionCard } from '../../common/section-card/SectionCard';
-import { ui } from '../../../db/ui/index';
+import { getData } from '../../../api/api';
+
+const data = getData("/ui");
+
 
 const Interface = () => {
+  const ui = data.ui.read();
   const options = Object.keys(ui);
 
   return (

@@ -1,8 +1,9 @@
 import { getDocs, collection, getDoc, doc, addDoc, serverTimestamp, setDoc, QuerySnapshot, DocumentData } from 'firebase/firestore';
-import {db} from '../../firebaseConfig';
+import { getCollection } from '../utilities/firebaseMethods';
+
 
 const fetchData = (endpoint: string) => {
-  const itemCollection = collection(db, endpoint);
+  const itemCollection = getCollection(endpoint);
   return getDocs(itemCollection);
 }
 

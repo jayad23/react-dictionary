@@ -1,11 +1,15 @@
-import React from 'react';
+import React  from 'react';
 import { CustomBoxElement } from '../../common/styles/customElements';
 import { SectionCard } from '../../common/section-card/SectionCard';
-import { ux } from '../../../db/ux/index';
+import { getData } from '../../../api/api';
+
+const data = getData("/ux");
+ 
 
 const Xperience = () => {
+  const ux = data.ux.read();
   const options = Object.keys(ux);
-  
+ 
   return (
     <CustomBoxElement>
       {

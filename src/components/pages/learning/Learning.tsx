@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { CustomBoxElement } from '../../common/styles/customElements';
 import { SectionCard } from '../../common/section-card/SectionCard';
-import { learning } from '../../../db/learning/index';
+import { getData } from '../../../api/api';
+
+const data = getData("/learning");
 
 const Learning = () => {
+  const learning = data.learning.read();
   const options = Object.keys(learning);
   
   return (

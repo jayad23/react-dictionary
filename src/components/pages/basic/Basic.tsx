@@ -1,11 +1,14 @@
 import React from 'react';
 import { CustomBoxElement } from '../../common/styles/customElements';
 import { SectionCard } from '../../common/section-card/SectionCard';
-import { basics } from '../../../db/basics/index';
+import { getData } from '../../../api/api';
+
+const data = getData("/basics");
 
 const Basic = () => {
-  const basic = basics;
-  const options = Object.keys(basic);
+
+  const basics = data.basics.read();
+  const options = Object.keys(basics);
 
   return (
     <CustomBoxElement>
@@ -15,7 +18,7 @@ const Basic = () => {
           <SectionCard 
             key={index} 
             option={option} 
-            information={basic[option as keyof typeof basic]} 
+            information={basics[option as keyof typeof basics]} 
           />  
         ))
       }
