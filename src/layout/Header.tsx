@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearRoundedIcon from '@mui/icons-material/ClearRounded';
-import { SearchContext } from '../context/Context';
+import { SearchContext } from '@context/Context'; 
 import { LanguageMenu } from './LanguageMenu';
 
 const Search = styled('div')(({ theme }) => ({

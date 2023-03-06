@@ -1,9 +1,9 @@
 import React from "react"
-export const LayoutSearch = React.lazy(() => import("../layout/Layout"))
+export const LayoutSearch = React.lazy(() => import("@layout/Layout"))
 
 
 const DynamicImporting = (param: string) => {
-  const Component = React.lazy(() => import(`../components/pages/${param.toLowerCase()}/${param}.tsx`))
+  const Component = React.lazy(() => import(`@components/pages/${param.toLowerCase()}/${param}.tsx`))
   return Component;
 }
 

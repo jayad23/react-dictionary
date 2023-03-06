@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Box, CardMedia, IconButton, Menu, MenuItem, Tooltip, Typography} from '@mui/material';
 import TranslateRoundedIcon from '@mui/icons-material/TranslateRounded';
-import { SearchContext } from '../context/Context';
+import { SearchContext } from '@context/Context';
 
 export const LanguageMenu = () => {
   const { state, dispatch } = useContext(SearchContext);

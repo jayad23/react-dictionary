@@ -10,10 +10,10 @@ import {
   Typography
 } from '@mui/material';
 import { SectionCardProps } from './Types';
-import { SearchContext } from '../../../context/Context';
+import { SearchContext } from '@context/Context';
 import RemoveRedEyeRoundedIcon from '@mui/icons-material/RemoveRedEyeRounded';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { stringToRoute } from '../../../utilities/stringManager';
+import { stringToRoute } from '@utilities/stringManager';
 import "./style.css";
 
 export const SectionCard = ({ option, information }: SectionCardProps) => {

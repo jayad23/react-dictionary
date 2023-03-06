@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import { Media } from '../../../common/section-card/Types';
-import { CenteredContainer } from '../../../common/styles/customElements';
+import { Media } from '@common/section-card/Types';
+import { CenteredContainer } from '@common/styles/customElements';
 import { blue, red } from '@mui/material/colors';
 
 export const CustomRow = ({ from, row }: { from: string; row: Array<Media> }) => {

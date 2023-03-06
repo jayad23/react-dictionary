@@ -1,7 +1,7 @@
 import React from 'react';
-import { CustomBoxElement } from '../../common/styles/customElements';
-import { SectionCard } from '../../common/section-card/SectionCard';
-import { getData } from '../../../api/api';
+import { CustomBoxElement } from '@common/styles/customElements';
+import { SectionCard } from '@common/section-card/SectionCard';
+import { getData } from '@api/api';
 
 const data = getData("/basics");
 

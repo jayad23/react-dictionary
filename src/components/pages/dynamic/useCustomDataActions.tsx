@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { SearchContext } from "../../../context/Context";
+import { SearchContext } from "@context/Context";
 import { CustomRow } from "./components/CustomRow";
 
 export const useCustomDataActions = () => {

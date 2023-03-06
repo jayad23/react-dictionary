@@ -1,7 +1,7 @@
 import { Box, IconButton, Stack } from '@mui/material';
 import React, { useState, useRef } from 'react';
-import { uploadPicture } from '../../../utilities/firebaseMethods';
-import { getEnvVariables } from '../../../utilities/getEnv';
+import { uploadPicture } from '@utilities/firebaseMethods';
+import { getEnvVariables } from '@utilities/getEnv';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import CloudUploadRoundedIcon from '@mui/icons-material/CloudUploadRounded';
 import ImageRender from './components/ImageRender';

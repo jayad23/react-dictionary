@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react'
 import {Box, Button, CardMedia, Typography } from '@mui/material'
-import {SearchContext} from '../../../context/Context';
+import {SearchContext} from '@context/Context';
 import { useNavigate } from 'react-router-dom';
 
 export const ErrorComponent = () => {

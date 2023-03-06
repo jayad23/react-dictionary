@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import {Box,  CardMedia } from '@mui/material'
-import {SearchContext} from '../../../context/Context';
-import { assets } from '../../../context/utils';
+import {SearchContext} from '@context/Context';
+import { assets } from '@context/utils';
 
 export const LoadingComponent = () => {
   return (

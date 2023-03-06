@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation} from 'react-router-dom'
 import { useCustomDataActions } from './useCustomDataActions';
-import CustomDataTable from '../../common/custom-data-table/CustomDataTable';
+import CustomDataTable from '@common/custom-data-table/CustomDataTable';
 
 const Dynamic = () => {
   const location = useLocation();

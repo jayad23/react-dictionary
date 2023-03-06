@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { LayoutSearch, Elements } from "./elements";
-import {ErrorComponent} from '../components/common/loading-component';
+import { ErrorComponent } from "@components/common/loading-component"; 
 
 export const AppRouter = () => (
   <BrowserRouter>

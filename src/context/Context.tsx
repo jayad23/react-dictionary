@@ -1,8 +1,8 @@
 import React, { createContext, ReactNode, useReducer } from "react";
-import { getData } from "../api/api";
+import { getData } from "@api/api";
 import { SearchContextProps, PropsState, PropSection } from "./ContextTypes";
 import { assets } from "./utils"
-import { stringManager } from "../utilities/stringManager";
+import { stringManager } from "@utilities/stringManager";
 
 const data = getData("/sections");
 

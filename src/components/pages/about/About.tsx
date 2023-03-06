@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCustomNavigation } from '../../../hooks/useCustomNavigation'
+import { useCustomNavigation } from '@hooks/useCustomNavigation'
 
 const About = () => {
   const { handleNavigation } = useCustomNavigation()

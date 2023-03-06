@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import {Box, CardMedia, Typography} from '@mui/material'
-import { SearchContext } from '../../../context/Context'
+import { SearchContext } from '@context/Context'
 
 export const NoDataComponent = () => {
   const { state } = useContext(SearchContext);

@@ -7,8 +7,8 @@ import {
   Button,
   Typography
 } from '@mui/material';
-import { PropSection } from '../../../context/ContextTypes';
-import { SearchContext } from '../../../context/Context';
+import { PropSection } from '@context/ContextTypes';
+import { SearchContext } from '@context/Context';
 import {useNavigate} from 'react-router-dom';
 
 const bull = (

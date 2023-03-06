@@ -1,8 +1,8 @@
 import React, {Suspense} from "react"
 import { StyledEngineProvider } from '@mui/material/styles';
-import ThemeContextProvider from '../theme/ThemeContextProvider';
-import SearchContextProvider from '../context/Context';
-import { LoadingComponent } from '../components/common/loading-component';
+import ThemeContextProvider from "@theme/ThemeContextProvider"; 
+import SearchContextProvider from "@context/Context"; 
+import { LoadingComponent } from "@components/common/loading-component";
 import { AppRouter } from "./AppRouter";
 
 function App() {
