@@ -40,36 +40,51 @@ export const Elements = [
   },
   {
     id: 7,
-    Element: DynamicImporting("Dynamic"),
-    route: "/basic-concepts/:selection"
+    Element: DynamicImporting("Login"),
+    route: "/login"
   },
   {
     id: 8,
-    Element: DynamicImporting("Dynamic"),
-    route: "/user-interface/:selection"
+    Element: DynamicImporting("Backoffice"),
+    route: "login/add-resource"
   },
   {
     id: 9,
-    Element: DynamicImporting("Dynamic"),
-    route: "/performance/:selection"
+    Element: DynamicImporting("Resource"),
+    route: "/share-resource"
   },
   {
     id: 10,
     Element: DynamicImporting("Dynamic"),
-    route: "/user-experience/:selection"
+    route: "/basic-concepts/:selection"
   },
   {
     id: 11,
-    Element: DynamicImporting("Learning"),
-    route: "/free-courses"
+    Element: DynamicImporting("Dynamic"),
+    route: "/user-interface/:selection"
   },
   {
     id: 12,
     Element: DynamicImporting("Dynamic"),
-    route: "/free-courses/:selection"
+    route: "/performance/:selection"
   },
   {
     id: 13,
+    Element: DynamicImporting("Dynamic"),
+    route: "/user-experience/:selection"
+  },
+  {
+    id: 14,
+    Element: DynamicImporting("Learning"),
+    route: "/free-courses"
+  },
+  {
+    id: 15,
+    Element: DynamicImporting("Dynamic"),
+    route: "/free-courses/:selection"
+  },
+  {
+    id: 16,
     Element: DynamicImporting("ArticlesBlogs"),
     route: "/blogs-&-articles"
   }

@@ -40,7 +40,7 @@ const SearchContextProvider = ({ children }: { children: ReactNode }) => {
     searchValue: "",
     response: [],
     homeData: data.sections.read(),
-    lang: 'es'
+    lang: localStorage.getItem("lang") ?? "es"
   };
 
   const [ state, dispatch ] = useReducer(actionReducer, initalState);
