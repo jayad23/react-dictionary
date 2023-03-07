@@ -1,8 +1,9 @@
 import React, {useContext, useState} from 'react';
-import {Button, CardMedia, TextField} from '@mui/material';
+import {Button, CardMedia, IconButton, TextField, Tooltip} from '@mui/material';
 import { LoginContainer, Glass, Container, Form } from './Login.styles';
 import { PasswordInput } from '@components/common/password/Password';
 import {SearchContext} from '@context/Context';
+import { onSignin } from '@utilities/firebaseMethods';
 
 const Login = () => {
   const [values, setValues ] = useState({ email: "", password: ""});
@@ -12,9 +13,10 @@ const Login = () => {
     setValues({...values, password: value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLDivElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLDivElement>) => {
     e.preventDefault();
-    console.log(values)
+    const response = await onSignin({ ...values });
+    console.log(response);
   };
 
   const text = {
