@@ -13,4 +13,4 @@
 
 ### 
 
-![logo](https://jay-adams-clearw.imgbb.com/?page=2&seek=VtZMS5v)
+![logo](https://i.ibb.co/Fwt8Lf0/Screenshot-2023-02-12-at-11-51-02.png)
