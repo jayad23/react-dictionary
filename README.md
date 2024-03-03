@@ -12,3 +12,5 @@
 ### Las páginas deben mantener una nomenclatura básica. Una única palabra sin particiones con guíones. El nombre de la carpeta en minúscula, y el nombre del archivo en con la primera letra en Mayúscula. E.g. `[basic]/Basic.tsx` Las importaciones de las páginas se dan forma dinámica y semi-utomatizada. Se debe agregar la declaración de la nueva página en el componente `elements.ts` de la carpeta `[router].` No se debe hacer ninguna importación; solo agregar una declaración más al arreglo de Elementos.
 
 ### 
+
+![logo](https://jay-adams-clearw.imgbb.com/?page=2&seek=VtZMS5v)
